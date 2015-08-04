@@ -1,0 +1,36 @@
+{
+  "name": "CheckYourFollowers",
+  "version": "0.0.1",
+  "description": "Web facing code base for Check My Followers",
+  "main": "app.js",
+  "repository": "coming",
+  "license": "MIT",
+  "author": "Josh Dickson",
+  "private": false,
+  "dependencies": {
+    "async": "~1.4.0",
+    "body-parser": "~1.13.3",
+    "connect-flash": "~0.1.1",
+    "connect-mongo": "~0.8.2",
+    "cookie-parser": "~1.3.5",
+    "cookie-session": "~1.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.3",
+    "express-session": "~1.11.3",
+    "express-useragent": "^0.1.9",
+    "method-override": "~2.3.5",
+    "mongoose": "~4.1.0",
+    "morgan": "~1.6.1",
+    "multer": "~1.0.1",
+    "passport": "~0.2.2",
+    "passport-twitter": "~1.0.3",
+    "randomstring": "~1.0.7",
+    "request": "~2.60.0",
+    "twitter": "~1.2.5",
+    "ua-parser-js": "~0.7.9",
+    "underscore": "~1.8.3"
+  },
+  "engines": {
+    "node": "~0.12.7"
+  }
+}

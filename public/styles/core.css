@@ -1,0 +1,248 @@
+body {
+    text-align: center;
+}
+
+header {
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+header ul li {
+    display: inline-block;
+    padding-right: 14px;
+    padding-left: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+header ul li:last-child {
+    border-right: none;
+    padding-right: 8px;
+}
+
+header ul li:first-child {
+    padding-left: 0;
+}
+
+header ul li a {
+    display: inline-block;
+    font-family: 'freight-sans-pro', Arial, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+header ul  {
+    margin: 0 auto;
+}
+
+body section#main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #4B77BE;
+    text-align: center;
+}
+
+body section#main img#down-arrow {
+    position: absolute;
+    margin: 0 auto;
+    width: 24px;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    -webkit-animation: updown 3s ease-in-out infinite;
+    -moz-animation: updown 3s ease-in-out infinite;
+    animation: updown 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes updown {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@keyframes updown {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+    }
+}
+
+body section#main:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+body section#main p#footer {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: white;
+}
+
+body section#main p#footer a {
+    color: white;
+}
+
+div#text-float {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'freight-sans-pro', Arial, sans-serif;
+    color: white;
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+div#text-float div#tweet-wrapper {
+    display: inline-block;
+    margin: 0 auto;
+    width: 500px;
+    padding-bottom: 10px;
+}
+
+div#text-float h1 {
+    font-weight: 700;
+    font-size: 62px;
+    text-shadow: 0px 4px 8px #3e64a0;
+}
+
+div#text-float h3 {
+    font-weight: 400;
+    font-size: 29px;
+    opacity: 0.75;
+    padding: 3px 0 28px;
+    text-shadow: 0px 1px 2px #3e64a0;
+}
+
+div#text-float a {
+    display: inline-block;
+    background-color: white;
+    color: #111;
+    padding: 18px 32px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px #3e64a0;
+}
+
+div#text-float a p {
+    padding-left: 33px;
+    font-size: 18px;
+}
+
+div#text-float a img {
+    height: 20px;
+    padding-top: 2px;
+    float: left;
+}
+
+section#bottom {
+    padding: 100px 0 70px;
+}
+
+section#bottom h3, p {
+    color: #111;
+    font-family: 'freight-sans-pro', Arial, sans-serif;
+}
+
+section#bottom h3 {
+    font-size: 21px;
+    padding-bottom: 3px;
+    font-weight: 500;
+    color: #222;
+}
+
+section#bottom p {
+    font-size: 17px;
+    opacity: 0.66;
+    line-height: 24px;
+}
+
+body > p {
+    font-size: 16px;
+    color: #888;
+    padding-bottom: 38px;
+}
+
+body > p a {
+    color: #444;
+}
+
+@media (min-width: 600px) {
+
+    section#bottom > div {
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+	section#bottom > div > div {
+        width: 45%;
+        float: left;
+    }
+
+    section#bottom section.top {
+        padding-bottom: 40px;
+    }
+
+    section#bottom > div > div#col-a {
+        padding-right: 10%;
+    }
+
+}
+
+@media (max-width: 599px) {
+
+    section#bottom {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
+    section#bottom > div {
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    section#bottom section {
+        padding-bottom: 30px;
+    }
+
+    div#text-float h1 {
+        font-size: 44px;
+        text-shadow: 0px 2px 4px #3e64a0;
+    }
+
+    div#text-float h3 {
+        font-size: 23px;
+        padding: 3px 0 20px;
+        text-shadow: 0px 1px 2px #3e64a0;
+    }
+
+    div#text-float div#tweet-wrapper {
+        display: inline-block;
+        margin: 0 auto;
+        width: 90%;
+        padding-bottom: 4px;
+    }
+
+    body section#main {
+        min-height: 700px;
+        position: relative;
+    }
+
+
+}
