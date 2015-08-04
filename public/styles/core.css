@@ -129,6 +129,10 @@ div#text-float h3 {
     text-shadow: 0px 1px 2px #3e64a0;
 }
 
+div#text-float h3.nopad {
+    padding: 3px 0 2px;
+}
+
 div#text-float a {
     display: inline-block;
     background-color: white;
@@ -230,6 +234,10 @@ body > p a {
         font-size: 23px;
         padding: 3px 0 20px;
         text-shadow: 0px 1px 2px #3e64a0;
+    }
+
+    div#text-float h3.nopad {
+        padding: 3px 0 2px;
     }
 
     div#text-float div#tweet-wrapper {
