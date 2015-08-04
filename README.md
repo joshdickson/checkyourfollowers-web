@@ -11,9 +11,9 @@ Most importantly, Twitter heavily rate-limits its APIs on a per-app and per-user
 
 The bot is organized in three pieces:
 
-1. [A Web UI](https://github.com/joshdickson40/checkyourfollowers-web/blob/master/README.md)
-2. A Twitter Listener and Task Producer
-3. A Task Consumer and a 'Tweeter'
+1. [A Web UI](https://github.com/joshdickson40/checkyourfollowers-web)
+2. [A Twitter Listener and Task Producer](https://github.com/joshdickson40/checkyourfollowers-listener)
+3. [A Task Consumer and a 'Tweeter'](https://github.com/joshdickson40/checkyourfollowers-consumer)
 
 This repository covers the Web UI, which has two parts:
 
@@ -46,7 +46,7 @@ The returned solution results in the task leaving the managed pool. Results (eit
 
 ### Read More
 
-A more expansive write up of the results and a bit of background information is located here.
+A more expansive write up of the results and a bit of background information is located here. TODO
 
 
 
