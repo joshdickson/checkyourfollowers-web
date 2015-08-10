@@ -16,6 +16,7 @@
     "cookie-session": "~1.2.0",
     "ejs": "~2.3.3",
     "express": "~4.13.3",
+    "express-force-domain": "0.0.6",
     "express-session": "~1.11.3",
     "express-useragent": "^0.1.9",
     "method-override": "~2.3.5",

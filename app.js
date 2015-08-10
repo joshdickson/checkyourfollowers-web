@@ -1,7 +1,9 @@
 // set up
 var port 			= process.env.PORT;
 var envShort 		= process.env.NODE_DOMAIN_SHORT;
+var envLong 		= process.env.NODE_DOMAIN_LONG;
 var sessionSecret 	= process.env.SESSION_SECRET;
+var nodeEnvironment = process.env.NODE_ENV;
 
 var express 		= require('express');
 var useragent 		= require('express-useragent');
@@ -29,6 +31,10 @@ ejs.delimiter = '$';
 // pass passport for configuration
 require('./config/passport')(passport);
 
+// set no www redirect
+if(nodeEnvironment == 'production')
+	app.use( require('express-force-domain')('https://checkyourfollowers.com') );
+
 // set static files location
 app.use(express.static(__dirname + '/public'));
 
@@ -42,6 +48,7 @@ app.use(cookieParser()); // read cookies (needed for auth)
 
 //On successful connect
 dbConnection.on('connected', function () {
+
 
 	// check subdomain cookie
 	app.use(session({
